@@ -180,13 +180,15 @@ public class Main extends JFrame {
 
 		JMenu mnFile = new JMenu("File");
 		mnFile.setIcon(new ImageIcon(Main.class
-				.getResource("")));
+				.getResource("/image_Icon/File.jpg")));
 		menuBar.add(mnFile);
 
 		JMenuItem mntmExit = new JMenuItem("Exit");
 		mnFile.add(mntmExit);
 
 		JMenu mnInpatient = new JMenu("Inpatients");
+		mnInpatient.setIcon(new ImageIcon(Main.class
+				.getResource("/image_Icon/patient.png")));
 		menuBar.add(mnInpatient);
 
 		JMenu mnPatientAdmission = new JMenu("Patient Admission");
@@ -229,6 +231,8 @@ public class Main extends JFrame {
 		mnInpatient.add(mntmDischargePatient);
 
 		JMenu mnOutpatients = new JMenu("Outpatients");
+		mnOutpatients.setIcon(new ImageIcon(Main.class
+				.getResource("/image_Icon/patient.png")));
 		menuBar.add(mnOutpatients);
 
 		mntmOutpatientsMaintenance = new JMenuItem("Outpatients Maintenance");
@@ -236,6 +240,8 @@ public class Main extends JFrame {
 		mnOutpatients.add(mntmOutpatientsMaintenance);
 
 		JMenu mnTreatments_1 = new JMenu("Treatments");
+		mnTreatments_1.setIcon(new ImageIcon(Main.class
+				.getResource("/image_Icon/Treatments.png")));
 		mnOutpatients.add(mnTreatments_1);
 
 		JMenu mnServicTreatmentMaintenance = new JMenu(
@@ -268,6 +274,8 @@ public class Main extends JFrame {
 		mnOutpatients.add(mntmViewOverallPatient_1);
 
 		JMenu mnChanneling = new JMenu("Channeling");
+		mnChanneling.setIcon(new ImageIcon(Main.class
+				.getResource("/image_Icon/Treatments.png")));
 		menuBar.add(mnChanneling);
 
 		mntmManageAppointments = new JMenuItem("Manage Appointments");
@@ -275,6 +283,8 @@ public class Main extends JFrame {
 		mnChanneling.add(mntmManageAppointments);
 
 		JMenu mnPayments = new JMenu("Payments");
+		mnPayments.setIcon(new ImageIcon(Main.class
+				.getResource("/image_Icon/payment.jpg")));
 		menuBar.add(mnPayments);
 
 		JMenu mnInpatient_1 = new JMenu("Inpatient");
@@ -288,6 +298,8 @@ public class Main extends JFrame {
 		mnInpatient_1.add(mntmSerchPayments);
 
 		JMenu mnOutpatient = new JMenu("Outpatient");
+		mnOutpatient.setIcon(new ImageIcon(Main.class
+				.getResource("/image_Icon/patient.png")));
 		mnPayments.add(mnOutpatient);
 
 		mntmSerchPayments_1 = new JMenuItem("Serch Payments");
@@ -299,6 +311,8 @@ public class Main extends JFrame {
 		mnOutpatient.add(mntmManagePatientBill_1);
 
 		JMenu mnReports = new JMenu("Reports");
+		mnReports.setIcon(new ImageIcon(Main.class
+				.getResource("/image_Icon/patient.png")));
 		menuBar.add(mnReports);
 
 		JMenu mnPatientsReports = new JMenu("Patients Reports");
@@ -470,6 +484,8 @@ public class Main extends JFrame {
 		mnMaintenance.add(mntmCorporateMaintenance);
 
 		JMenu mnUserAccount = new JMenu("User Account");
+		mnUserAccount.setIcon(new ImageIcon(Main.class
+				.getResource("/image_Icon/patient.png")));
 		menuBar.add(mnUserAccount);
 
 		mntmManageUserAccounts = new JMenuItem("Manage User Accounts");
